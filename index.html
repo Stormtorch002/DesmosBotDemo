@@ -14,7 +14,7 @@
             xhr = new XMLHttpRequest();
             // The USER_ID here will be replaced with the actual user's ID in the command
             xhr.open('GET', `http://YOUR.VPS.IP.ADDRESS:5000/USER_ID`);
-            xhr.send()
+            xhr.send();
             // Get the data returned from the request (the get_latex function in python)
             xhr.onload = () => {
                 var resp = JSON.parse(xhr.response);
