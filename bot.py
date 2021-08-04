@@ -102,7 +102,7 @@ class Desmos(commands.Cog):
 
             # Modify HTML file to send request to /ctx.author.id
             with open('./index.html') as f:
-                content = f.read().replace('chigger', str(ctx.author.id))
+                content = f.read().replace('USER_ID', str(ctx.author.id))
                 new = BytesIO()
                 new.write(bytes(content, 'utf8'))
                 new.seek(0)
